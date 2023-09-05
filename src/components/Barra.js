@@ -48,7 +48,8 @@ export const Barra = () => {
                             <a target="_blank" href="https://github.com/francoedson"><img src={navIcon2} alt=""/></a>
                             <a target="_blank" href="https://www.instagram.com/franco.edson_/"><img src={navIcon3} alt=""/></a>
                         </div>
-                        <button className="vvd" onClick={()=>console.log('connect')}><span>Contáctame</span></button>
+                        <Nav.Link  href="#connect" onClick={()=>console.log('connect')}><button  className="vvd" ><span>Contáctame</span></button></Nav.Link>
+                        
                     </span>
                 </Navbar.Collapse>
             </Container>
