@@ -133,7 +133,26 @@ export const Contact = () => {
         </Row>
       </Container>
       <footer className="footer" style={{ marginTop: 0 }}>
-        <p>Un proyecto de Franco Mariño</p>
+        <div className="container">
+          <p >
+          © Un proyecto de Franco Mariño -{' '}
+            <a
+              href="https://github.com/francoedson"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>{' '}
+            |{' '}
+            <a
+              href="https://www.linkedin.com/in/franco-mari%C3%B1o-2a289620a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </p>
+        </div>
       </footer>
     </div>
   );
