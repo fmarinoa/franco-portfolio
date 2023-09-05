@@ -64,7 +64,7 @@ export const Contact = () => {
 
   return (
     <div className="contact" id="connect">
-      <Container>
+      <Container style={{ marginBottom: 0 }}>
         <Row className="align-items-center">
           <Col md={6}>
             <img src={contactImg} alt="Contact" />
@@ -112,15 +112,16 @@ export const Contact = () => {
                     required
                   />
                 </Col>
-                <Col sm={12} className="px-1">
-                  <button type="submit">{buttonText}</button>
+                <Col sm={12} >
+                  <button type="submit" className="hover-button">
+                    <span>{buttonText}</span>
+                  </button>
                 </Col>
                 {showNotification && (
                   <Col>
                     <div
-                      className={`notification ${
-                        status.success ? "success" : "danger"
-                      }`}
+                      className={`notification ${status.success ? "success" : "danger"
+                        }`}
                     >
                       {status.message}
                     </div>
@@ -131,6 +132,9 @@ export const Contact = () => {
           </Col>
         </Row>
       </Container>
+      <footer className="footer" style={{ marginTop: 0 }}>
+        <p>Un proyecto de Franco Mariño</p>
+      </footer>
     </div>
   );
 };
